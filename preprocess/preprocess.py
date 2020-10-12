@@ -1,10 +1,9 @@
 import numpy as np
-import matplotlib.pyplot as plt
 import pandas as pd
-from sklearn.impute import SimpleImputer
 from sklearn.compose import ColumnTransformer
-from sklearn.preprocessing import OneHotEncoder, LabelEncoder, StandardScaler
+from sklearn.impute import SimpleImputer
 from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import OneHotEncoder, LabelEncoder, StandardScaler
 
 data = pd.read_csv('Data.csv')
 x = data.iloc[:, :-1].values
